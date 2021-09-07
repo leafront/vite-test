@@ -1,11 +1,8 @@
 ### 启动环境
 ```
 npm install  
-npm run dev 开发环境
-npm run prod 生产环境
-
-npm run local_dev  本地开发环境
-npm run local_prod  本地生产环境
+npm run dev
+npm run serve
 
 ```
 
