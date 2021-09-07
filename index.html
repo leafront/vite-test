@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MindfFly 灵机一动</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on"/>
+    <meta content="telephone=no" name="format-detection">
+    <meta name="keywords" content=""/>
+    <script type="text/javascript">
+      function browserToast () {
+        var userAgent = navigator.userAgent;
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera;
+        if (isIE) {
+          var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+          reIE.test(userAgent)
+          var fIEVersion = parseFloat(RegExp["$1"]);
+          var ieVersion = [6,7,8,9,10,11]
+          if (ieVersion.includes(fIEVersion)) {
+            alert("请下载edge浏览器、chrome 浏览器、火狐浏览器、360浏览器")
+          }
+        }
+      }
+      browserToast()
+
+    </script>
+    <%- injectLink %>
+    <%- injectCss %>
+    <%- injectScript %>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
